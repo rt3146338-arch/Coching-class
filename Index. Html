@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भारतीय कोचिंग सेंटर - Modern Coaching Website</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        .nav-links a {
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #home {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding-top: 6rem;
+        }
+        #home h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        #home p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            background-color: #ffd700;
+            color: #333;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ffed4e;
+        }
+        #about, #courses, #contact {
+            background-color: white;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        #about h2, #courses h2, #contact h2 {
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+        #courses .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .course-item {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            flex: 1 1 300px;
+        }
+        #contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        #contact input, #contact textarea {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* For simplicity, hide nav on mobile; can add hamburger later */
+            }
+            #home h1 {
+                font-size: 2rem;
+            }
+            .course-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">भारतीय कोचिंग सेंटर</div>
+            <ul class="nav-links">
+                <li><a href="#home">होम</a></li>
+                <li><a href="#about">हमारे बारे में</a></li>
+                <li><a href="#courses">कोर्स</a></li>
+                <li><a href="#contact">संपर्क</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>स्वागत है भारतीय कोचिंग सेंटर में</h1>
+        <p>आपकी सफलता के लिए सर्वोत्तम कोचिंग सेवाएं। IIT-JEE, NEET, और अन्य प्रतियोगी परीक्षाओं के लिए तैयार करें।</p>
+        <a href="#courses" class="btn">कोर्स देखें</a>
+    </section>
+
+    <section id="about">
+        <h2>हमारे बारे में</h2>
+        <p>हम भारतीय कोचिंग सेंटर में, छात्रों को उच्च गुणवत्ता वाली शिक्षा प्रदान करने पर ध्यान केंद्रित करते हैं। हमारे अनुभवी शिक्षक और आधुनिक शिक्षण विधियां आपको परीक्षाओं में सफल बनाने के लिए डिज़ाइन की गई हैं। हमारा लक्ष्य है कि हर छात्र अपनी पूरी क्षमता प्राप्त करे।</p>
+    </section>
+
+    <section id="courses">
+        <h2>हमारे कोर्स</h2>
+        <div class="course-list">
+            <div class="course-item">
+                <h3>IIT-JEE कोचिंग</h3>
+                <p>गणित, भौतिकी और रसायन विज्ञान में विशेषज्ञता।</p>
+            </div>
+            <div class="course-item">
+                <h3>NEET कोचिंग</h3>
+                <p>जीव विज्ञान, रसायन विज्ञान और भौतिकी के लिए तैयार।</p>
+            </div>
+            <div class="course-item">
+                <h3>SSC/CGL कोचिंग</h3>
+                <p>सरकारी नौकरियों के लिए तैयारी।</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>संपर्क करें</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="आपका नाम" required>
+            <input type="email" name="email" placeholder="आपका ईमेल" required>
+            <textarea name="message" placeholder="आपका संदेश" rows="5" required></textarea>
+            <button type="submit" class="btn">संदेश भेजें</button>
+        </form>
+    </section>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank">💬</a>
+
+    <footer>
+        <p>&copy; 2023 भारतीय कोचिंग सेंटर. सभी अधिकार सुरक्षित।</p>
+    </footer>
+</body>
+</html>
